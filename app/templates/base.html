@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - GHOST PETALS</title>
+        {% else %}
+        <title>GHOST PETAL'S SITE</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>GHOST: <a href="/index">HOME</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

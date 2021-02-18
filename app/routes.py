@@ -17,3 +17,18 @@ def index():
     ]
 
     return render_template('index.html', title='Home', user=user, posts=posts)
+
+
+
+
+@app.route('/stream')
+def stream():
+    return "CLICKED STREAM"
+
+
+
+
+
+@app.route('/download')
+def download():
+    return "DOWNLOAD LINK :D"

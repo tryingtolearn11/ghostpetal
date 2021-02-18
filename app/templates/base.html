@@ -1,14 +1,20 @@
 <html>
     <head>
         {% if title %}
-        <title>{{ title }} - GHOST PETALS</title>
+        <title>{{ title }} - GHOSTPETALS</title>
         {% else %}
         <title>GHOST PETAL'S SITE</title>
         {% endif %}
     </head>
-    <body>
-        <div>GHOST: <a href="/index">HOME</a></div>
-        <hr>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('stream') }}">STREAM</a></li>
+                <li><a href="{{ url_for('download') }}">DOWNLOAD</a></li>
+            </ul>
+        </nav>
+    </section>
         {% block content %}{% endblock %}
     </body>
 </html>

@@ -32,3 +32,9 @@ def stream():
 @app.route('/download')
 def download():
     return "DOWNLOAD LINK :D"
+
+
+
+@app.route('/gallery')
+def gallery():
+    return "GALLERY LINK :D"

@@ -5,13 +5,17 @@
         <title>Audio Tests</title>
     </head>
     <p>Click to Play</p>
-    {% for song in songs %}
-        <audio controls>
-            <li><a href="javascript:void(0);"onclick="playSong('{{song}}')">{{song}}</a>
-        </audio>
-    {% endfor %}
+    <audio controls="controls" autoplay="autoplay"></audio>
+    <ul>
+        {% for song in songs %}
+                <li><ahref="javascript:void(0);" onclick="playSong('{{song}}')">{{song}}</a></li>
+        {% endfor %}
+    </ul>
 
-
-
+    <script type="text/javascript">
+        function playSong(song) {
+            $('audio').attr('src', '/static/ghostpetalssongs'+song);
+        }
+    </script>
 
 {% endblock %}

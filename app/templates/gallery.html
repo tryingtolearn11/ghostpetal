@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for name in images %}
+        <img src="{{ url_for("static", filename="ghostpetalsimages/" + name) }}">
+    {% endfor %}
+{% endblock %}

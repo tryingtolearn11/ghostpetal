@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+import os
 
 @app.route('/')
 @app.route('/index')
@@ -37,4 +38,7 @@ def download():
 
 @app.route('/gallery')
 def gallery():
-    return "GALLERY LINK :D"
+    images = os.listdir('/home/damien/ghostpetal/app/static/ghostpetalsimages')
+    print(images)
+    return render_template('gallery.html', images=images)
+

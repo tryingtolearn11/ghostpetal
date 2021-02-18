@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <head>
+        <title>Audio Tests</title>
+    </head>
+    <p>Click to Play</p>
+    {% for song in songs %}
+        <audio controls>
+            <li><a href="javascript:void(0);"onclick="playSong('{{song}}')">{{song}}</a>
+        </audio>
+    {% endfor %}
+
+
+
+
+{% endblock %}

@@ -24,8 +24,9 @@ def index():
 
 @app.route('/stream')
 def stream():
-    return "CLICKED STREAM"
-
+    songs = os.listdir('/home/damien/ghostpetal/app/static/songs/ghostpetalssongs')
+    print(songs)
+    return render_template('songs.html', songs=songs)
 
 
 
@@ -41,4 +42,6 @@ def gallery():
     images = os.listdir('/home/damien/ghostpetal/app/static/ghostpetalsimages')
     print(images)
     return render_template('gallery.html', images=images)
+
+
 

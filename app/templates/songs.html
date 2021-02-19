@@ -1,18 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <script type="text/javascript"src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <head>
-        <title>Audio Tests</title>
-    </head>
-    <p>Click to Play</p>
+    
     <audio controls="controls" autoplay="autoplay"></audio>
     <ul>
         {% for song in songs %}
                 <li><a href="javascript:void(0);"onclick="playSong('{{song}}')">{{song}}</a></li>
         {% endfor %}
     </ul>
-
     <script type="text/javascript">
         function playSong(song) {
             $('audio').attr('src', '/static/ghostpetalssongs'+song);

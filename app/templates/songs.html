@@ -4,13 +4,13 @@
     
     <audio controls="controls" autoplay="autoplay"></audio>
     <ul>
-        {% for song in songs %}
-                <li><a href="javascript:void(0);"onclick="playSong('{{song}}')">{{song}}</a></li>
-        {% endfor %}
+    {% for song in songs %}
+    <li><a onclick="changeSong('{{song}}')" href="javascript:void(0);">{{song}}</a></li>
+    {% endfor %}
     </ul>
     <script type="text/javascript">
-        function playSong(song) {
-            $('audio').attr('src', '/static/ghostpetalssongs'+song);
+        function changeSong(song){
+            $('audio').attr('src', '/static/ghostpetalssongs/'+song);
         }
     </script>
 

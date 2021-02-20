@@ -24,7 +24,7 @@ def index():
 
 @app.route('/stream')
 def stream():
-    songs = os.listdir('/home/damien/ghostpetal/app/static/songs/ghostpetalssongs')
+    songs = os.listdir('/home/damien/ghostpetal/app/static/ghostpetalssongs/')
     print(songs)
     return render_template('songs.html', songs=songs)
 

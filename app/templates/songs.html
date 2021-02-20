@@ -2,7 +2,7 @@
 
 {% block content %}
     
-    <audio controls="controls" autoplay="autoplay"></audio>
+    <audio autoplay="autoplay"></audio>
     <ul>
     {% for song in songs %}
     <li><a onclick="changeSong('{{song}}')" href="javascript:void(0);">{{song}}</a></li>

@@ -5,14 +5,14 @@ import os
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'GHOST PETAL'}
+    user = {'username': "Ghost Petal's site"}
     posts = [ 
         {
-             'author': {'username': 'JOHNNY'},
+             'author': {'username': 'User01'},
              'body': 'THIS IS A TEST POST!'
         },
         {
-            'author': {'username': 'MAX'},
+            'author': {'username': 'User02'},
             'body': 'THIS SUCKS!!!'
         }
     ]
@@ -33,7 +33,7 @@ def stream():
 
 @app.route('/download')
 def download():
-    return "DOWNLOAD LINK :D"
+    return render_template('download.html')
 
 
 

@@ -14,7 +14,7 @@
         </div>
         <div class="column"> 
                 {% for name in images %}
-                    <img src="{{ url_for("static", filename="ghostpetalsimages/" + name) }}">
+                    <img class="img-fluid img-center" src="{{ url_for("static", filename="ghostpetalsimages/" + name) }}">
                 {% endfor %}
         </div>
     </div>

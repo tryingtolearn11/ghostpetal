@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <img src="static/cover_art.png" class="img-fluid" alt="Ghosts">
+
+<style>
+body {
+    background-image: url('static/cover_art.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
 {% endblock %}

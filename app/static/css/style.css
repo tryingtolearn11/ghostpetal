@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: Courier New;
 
 }
 
@@ -21,7 +22,6 @@
 
 
 .row .column img {
-   margin-top: 2%; 
     width: 600px;
     height: 400px;
     object-fit: cover;
@@ -53,4 +53,17 @@
         flex: 100%;
     }
 
+}
+
+
+
+.btn-group-vertical{
+    padding: 25px;
+    font-family: Roboto;
+
+    .btn btn-primary{
+        top-margin: 2%;    
+        color: white;
+    }
+    
 }

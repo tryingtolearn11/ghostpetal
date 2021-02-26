@@ -65,14 +65,25 @@
 
 
 
+.profileHover {
+    filter: grayscale(.9) brightness(0.9);
+    cursor: pointer;
+    transition: 0.5s linear;
+    transition: transform .2s;
+
+}
+
+.profileHover:hover{
+    filter: grayscale(0) brightness(1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 
-
-
-
-
-
-
+.lead {
+    font-family: Roboto;
+}
 
 
 

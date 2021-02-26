@@ -3,23 +3,28 @@
 {% block content %}
 
 <div class="container">
-    <div class="page-header text-center">
+    <div class="page-header text-center m-5">
         <h1>Ghost Petal</h1>
     </div>
 </div>
 
-
-<body>
+<section>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive center-block d-block mx-auto"
-                src="{{url_for('static',filename='cover_art.png')}}"alt=""
-                width=50%>
-                <p class="text-center">THIS IS A TEST STRING TO GO AT THE
-                CENTER OF THE PAGE UNDER THE PICTURE</p>
+                <div class="profileHover">
+                    <img class="img-responsive center-block d-block mx-auto"
+                    src="{{url_for('static',filename='cover_art.png')}}"alt=""
+                    width=50%>
+                </div>
             </div>
         </div>
     </div>
-</body>
+</section>
+<section>
+    <div class="container">
+        <p class="lead text-center m-5">THIS IS A TEST STRING TO GO AT THE CENTER OF THE PAGE UNDER THE PICTURE</p>
+    </div>
+</section>
+
 {% endblock %}

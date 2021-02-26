@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Courier New;
+    font-family: 'Julius Sans One', sans-serif;
 
 }
 
@@ -65,7 +67,7 @@
 
 
 
-.profileHover {
+.img-responsive {
     filter: grayscale(.9) brightness(0.9);
     cursor: pointer;
     transition: 0.5s linear;
@@ -73,7 +75,7 @@
 
 }
 
-.profileHover:hover{
+.img-responsive:hover{
     filter: grayscale(0) brightness(1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -82,7 +84,7 @@
 
 
 .lead {
-    font-family: Roboto;
+    font-family: Lato;
 }
 
 

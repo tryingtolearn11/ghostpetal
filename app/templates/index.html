@@ -8,33 +8,18 @@
     </div>
 </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive"
-            src="{{url_for('static',filename='cover_art.png')}}"alt="">
-                <div class="overlay">
-                    <h2>Test</h2>
-                    <p>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
 
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-
-                        <a href="#">
-                            <i class="fa fa-dribble"></i>
-                        </a>
-                    </p>
-                </div>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive center-block d-block mx-auto"
+                src="{{url_for('static',filename='cover_art.png')}}"alt=""
+                width=50%>
+                <p class="text-center">THIS IS A TEST STRING TO GO AT THE
+                CENTER OF THE PAGE UNDER THE PICTURE</p>
             </div>
+        </div>
     </div>
-
-
-
+</body>
 {% endblock %}
